@@ -1,6 +1,6 @@
 
 <?php
-echo "hello world asd";
+echo "hello world asd ";
 
 # string variable
 $name = 'alex';
@@ -64,3 +64,46 @@ $colors = array("red", "green", "blue", "yellow");
 foreach ($colors as $value) {
     echo "$value <br>";
 }
+echo "<br>";
+# function
+function writeMsg() {
+    echo "Hello world!";
+}
+
+writeMsg(); // call the function
+echo "<br>";
+#diving into arrays
+$records = [
+    [
+        'username' => 'alex',
+        'email' => 'email@mail.com',
+        'likes' => ['cats','food']
+    ],
+    [
+        'username' => 'billy',
+        'email' => 'billy@mail.com',
+        'likes' => ['dogs','drinks']
+    ],
+];
+echo '<pre>'. var_dump($records).'</pre>';
+
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+
+foreach($age as $x => $x_value) {
+    echo "Key=" . $x . ", Value=" . $x_value;
+    echo "<br>";
+}
+echo "<br> Sorted <br> ";
+ksort($age); //sorted ascending order to key ksort()
+foreach($age as $x => $x_value) {
+    echo "Key=" . $x . ", Value=" . $x_value;
+    echo "<br>";
+}
+# sorting
+$numbers = array(4, 6, 2, 22, 11);
+sort($numbers);
+foreach($numbers as $value){
+    echo $value;
+    echo "<br>";
+}
+
