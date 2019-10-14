@@ -26,7 +26,7 @@
 					
 					<br>
 					
-					<?php include('includes/store-hours.php'); ?>
+					<?php include('store-hours.php'); ?>
 					
 				</div><!-- column -->
 			
@@ -38,8 +38,6 @@
 		
 	</div><!-- wrapper -->
 	
-	<div class="copyright-info">
-		<?php include('../assets/includes/copyright.php'); ?>
-	</div><!-- copyright-info -->
+
 </body>
 </html>
